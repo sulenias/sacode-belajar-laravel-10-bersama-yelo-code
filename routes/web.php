@@ -16,11 +16,8 @@ use App\Http\Controllers\ProfileController;
 |
 */
 
-Route::get('/', [ DashboardController::class, 'index'] );
+Route::get('/', [DashboardController::class, 'index']);
 
-Route::get('/terms', function() {
+Route::get('/terms', function () {
     return view('terms');
 });
-
-
-
