@@ -18,6 +18,8 @@ use App\Http\Controllers\ProfileController;
 
 Route::get('/', [DashboardController::class, 'index']);
 
+Route::post('/idea', [IdeaController::class , 'store'] )->name('idea.create');
+
 Route::get('/terms', function () {
     return view('terms');
 });
